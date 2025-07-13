@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Eren'e Kızgın Mısın?</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #fef3f3;
+      margin-top: 100px;
+    }
+    h1 {
+      color: #d43f3f;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      margin: 20px;
+      cursor: pointer;
+      border: none;
+      border-radius: 8px;
+      transition: 0.2s;
+    }
+    .yes {
+      background-color: #ff4b5c;
+      color: white;
+    }
+    .no {
+      background-color: #cfcfcf;
+      color: #333;
+    }
+    button:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Eren'e hâlâ kızgın mısın?</h1>
+
+  <button class="yes" onclick="alert('Bunu bekliyordum 😔')">Evet</button>
+  <button class="no" onclick="redirectToYes()">Hayır</button>
+
+  <script>
+    function redirectToYes() {
+      alert("Bunu dürüstçe cevaplamalısın...");
+      setTimeout(function () {
+        alert("O zaman neden hâlâ düşünüyorsun? 🙄");
+        setTimeout(function () {
+          alert("Bence EVET :)");
+        }, 1000);
+      }, 1000);
+    }
+  </script>
+
+</body>
+</html>
